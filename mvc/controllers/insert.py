@@ -17,7 +17,7 @@ class Insert():
             data_user = web.input()
             nombre = data_user.nombre
             email = data_user.email
-            result = requests.post('https://agendav1-default-rtdb.firebaseio/agenda.json', 
+            result = requests.post('https://agenda-c177d-default-rtdb.firebaseio.com/agenda.json', 
             data=json.dumps({
                 
                 'nombre':nombre, 

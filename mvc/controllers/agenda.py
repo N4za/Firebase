@@ -8,7 +8,7 @@ class Agenda():
 
     def GET(self):
         try:
-            result = requests.get('https://agendav1-default-rtdb.firebaseio/agenda.json').text
+            result = requests.get('https://agenda-c177d-default-rtdb.firebaseio.com/agenda.json').text
             data = json.loads(result)
             return render.agenda(data) 
         except Exception as error:
